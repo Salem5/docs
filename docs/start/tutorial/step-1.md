@@ -87,7 +87,7 @@ Skipping over the styles for now, at the end of the file you'll find something n
   <core-icon icon="polymer"></core-icon>
 </div>
 
-Add HTML import links to import the `<core-header-panel>`, `<core-toolbar>`, and `<paper-tabs>` elements:
+Add HTML import links to import the `<core-header-panel>`, `<core-toolbar>`, and `<paper-tab>` elements:
 
 <side-by-side>
 <pre>
@@ -161,7 +161,7 @@ Add the tabs.
 
 The application will use tabs for navigating between two different views,
 a list of all messages and a list of favorites. The 
-<code><a href="/docs/elements/paper-elements.html#paper-tabs">&lt;paper-tabs&gt;</a></code>
+<code><a href="/docs/elements/paper-elements.html#paper-tabs">&lt;paper-tab&gt;</a></code>
 element works much like a `<select>` element, but it's styled as a set of
 tabs.
 
@@ -170,10 +170,10 @@ tabs.
 ...
 &lt;core-toolbar>
 
-  <strong class="highlight nocode">&lt;paper-tabs id="tabs" selected="all" self-end>
+  <strong class="highlight nocode">&lt;paper-tab id="tabs" selected="all" self-end>
     &lt;paper-tab name="all">All&lt;/paper-tab>
     &lt;paper-tab name="favorites">Favorites&lt;/paper-tab>
-  &lt;/paper-tabs></strong>
+  &lt;/paper-tab></strong>
 
 &lt;/core-toolbar>
 ...
@@ -182,7 +182,7 @@ tabs.
     <h4>Key information</h4>
     <ul>
       <li>
-        <code>&lt;paper-tabs></code> identifies the selected child by its name
+        <code>&lt;paper-tab></code> identifies the selected child by its name
         value or its index value.
       </li>
       <li>
@@ -244,7 +244,7 @@ core-toolbar {
         <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code>, take up 100% of the viewport height.</li>
     <li>The <code>overflow</code> and <code>-webkit-overflow-scrolling</code> properties ensure that
         scrolling works smoothly on touch devices, especially iOS.</li>
-    <li>The <code>#tabs</code> selector selects the <code>&lt;paper-tabs&gt;</code> element. The toolbar adds a default margin on its children, to space controls appropriately. The tabs don't need this extra spacing.</li>
+    <li>The <code>#tabs</code> selector selects the <code>&lt;paper-tab&gt;</code> element. The toolbar adds a default margin on its children, to space controls appropriately. The tabs don't need this extra spacing.</li>
     <li>The <code>user-select</code> properties prevent the user from accidentally selecting the tab text.</li>
   </ul>
 </aside>
@@ -293,7 +293,7 @@ Save the file and open the project in your browser (for example, [http://localho
 
 **Note:** If you have the console open, you'll notice that you get two `core-select` 
 events each time you switch tabs &mdash; one for the previously-selected tab and one 
-for the newly-selected tab. The `<paper-tabs>` element inherits this behavior from 
+for the newly-selected tab. The `<paper-tab>` element inherits this behavior from 
 <code><a href="/docs/elements/core-elements.html#core-selector">&lt;core-selector&gt;</a></code>, which supports
 both single and multiple selections.
 {: .alert .alert-info }
@@ -304,7 +304,7 @@ If something isn't working, check your work against the `index.html` file in the
 
 In this step, you used HTML imports to import custom elements, and used them to create a simple app layout.
 
-**Explore:** Can you use other children inside the `<paper-tabs>`? Try an image or a text span.
+**Explore:** Can you use other children inside the `<paper-tab>`? Try an image or a text span.
 {: .alert .alert-info }
 
 <div layout horizontal justified class="stepnav">
